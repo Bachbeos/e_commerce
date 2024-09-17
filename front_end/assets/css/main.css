@@ -154,6 +154,13 @@
     margin-right: 100px;
 }
 
+/* CSS popular */
+.popular-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 104px;
+}
+
 /* CSS offer */
 .offers {
     display: flex;
@@ -205,11 +212,11 @@
 }
 
 /* CSS new collections */
-
-.new-collections {
-
-}
-
 .collections {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    gap: 45px;
+    justify-content: space-between;
+    padding: 0 104px;
 }
