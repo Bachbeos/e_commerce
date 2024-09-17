@@ -6,13 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <title>E-Commerce</title>
 </head>
 <body>
-    <div id="main">
+    <div id="main" class="inter">
         <div class="header">
             <div class="header_navbar jetbrains-mono">
                 <div class="nav-logo">
@@ -28,12 +31,36 @@
                 </ul>
 
                 <div class="nav-login-cart">
-                    <button class="nav-login-cart-btn">Login</button>
-                    <img class="nav-login-cart-img" src="./assets/img/cart_icon.png" alt="">
+                    <button class="nav-login-cart-btn btn">Login</button>
+                    <img class="nav-login-cart-img" src="./assets/img/cart_icon.png" alt="cart icon">
+                    <div class="nav-login-cart-count">0</div>
                 </div>
             </div>
         </div>
 
+        <div class="container">
+            <div class="banner">
+                <div class="banner-left">
+                    <h2>NEW ARRIVALS ONLY</h2>
+                    <div class="banner-left-wrap">
+                        <div class="banner-left-hand-icon">
+                            <p>new</p>
+                            <img class="banner-left-hand-icon-img" src="./assets/img/hand_icon.png" alt="hand icon">
+                        </div>
+                        <p>collections</p>
+                        <p>for everyone</p>
+                    </div>
+                    <div class="banner-left-lastest-btn btn">
+                        <div>Lastest Collection</div>
+                        <img src="./assets/img/arrow.png" alt="arrow icon" />
+                    </div>
+                </div>
+                
+                <div class="banner-right">
+                    <img src="./assets/img/hero_image.png" alt="hero image">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

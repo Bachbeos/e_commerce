@@ -1,4 +1,4 @@
-
+/* CSS Navbar */
 .header_navbar {
     display: flex;
     justify-content: space-around;
@@ -47,7 +47,6 @@
     text-decoration: none;
     font-weight: 300;
     font-size: 24px;
-    line-height: 31.68px;
     color: var(--black-color);
 }
 
@@ -55,23 +54,104 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    position: relative;
 }
 
 .nav-login-cart-btn {
     width: 181px;
-    height: 55px;
-    outline: none;
     border: 1px solid var(--black-color);
-    border-radius: 75px;
     font-size: 22px;
     font-weight: 200;
-    line-height: 29.04px;
     color: var(--black-color);
     background: var(--white-color);
-    cursor: pointer;
+}
+
+.nav-login-cart-btn:active {
+    background-color: #f3f3f3;
 }
 
 .nav-login-cart-img {
     width: 40px;
     height: 35px;
 }
+
+.nav-login-cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #F12929;
+    color: var(--white-color);
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    right: -8px;
+    top: 42px;
+}
+
+/* CSS container */
+.container {
+
+}
+
+/* CSS banner */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    height: 694px;
+    margin-top: 2px;
+}
+
+.banner-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 104px;
+    margin-bottom: 88px;
+}
+
+.banner-left h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.banner-left-wrap p {
+    font-size: 79px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin: 0;
+}
+
+.banner-left-hand-icon {
+    display: flex;
+    align-items: center;
+}
+
+.banner-left-hand-icon-img {
+    width: 98.31px;
+    height: 98.31px;
+}
+
+.banner-left-lastest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: var(--btn-color);
+    width: 268px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.banner-right img {
+    width: 505px;
+    height: 694px;
+    margin-right: 100px;
+}
+
+/* CSS popular */

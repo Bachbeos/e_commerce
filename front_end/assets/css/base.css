@@ -1,6 +1,7 @@
 :root {
     --black-color: #000;
     --white-color: #fff;
+    --btn-color: #D03636;
 }
 
 * {
@@ -16,4 +17,16 @@
 
 .jetbrains-mono {
   font-family: "JetBrains Mono", monospace;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.btn {
+    height: 55px;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
 }
