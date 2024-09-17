@@ -144,7 +144,7 @@
     width: 268px;
     color: var(--white-color);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 40px;
 }
 
@@ -154,4 +154,62 @@
     margin-right: 100px;
 }
 
-/* CSS popular */
+/* CSS offer */
+.offers {
+    display: flex;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    height: 576px;
+    width: 1280px;
+    margin: auto;
+}
+
+.offer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 115px;
+    margin-top: -104px;
+}
+
+.offer-left h1 {
+    font-weight: 500;
+    font-size: 60px;
+    margin: 0 0 10px 0
+}
+
+.offer-left p {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px 0 25px 0;
+}
+
+.offer-left-btn {
+    width: 220px;
+    height: 55px;
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    border: none;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.offer-right {
+ margin-right: 74px;
+ margin-top: 47px;
+}
+
+.offer-right img {
+    width: 361px;
+    height: 529px;
+}
+
+/* CSS new collections */
+
+.new-collections {
+
+}
+
+.collections {
+
+}
