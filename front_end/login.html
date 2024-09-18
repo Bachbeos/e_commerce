@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <div id="main-login-page" class="jetbrains-mono">
+        <div class="header">
+            <div class="header_navbar jetbrains-mono">
+                <div class="nav-logo">
+                    <a href="index.html"><img class="nav-logo-img logo-img" src="./assets/img/logo_big.png" alt="Logo"></a>
+                    <p class="nav-logo-name logo-name">shopper</p>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="">Shop</a></li>
+                    <li class="nav-menu-item"><a href="">Man</a></li>
+                    <li class="nav-menu-item"><a href="">Woman</a></li>
+                    <li class="nav-menu-item"><a href="">Kid</a></li>
+                </ul>
+
+                <div class="nav-login-cart">
+                    <button class="nav-login-cart-btn btn">Login</button>
+                    <img class="nav-login-cart-img" src="./assets/img/cart_icon.png" alt="cart icon">
+                    <div class="nav-login-cart-count">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-container">
+            <div class="login-form">
+                <div class="login-form-wrap-content">
+                    <h1>Login</h1>
+                    <div class="login-fields">
+                        <input class="login-fields-input" type="email" placeholder="Email Address">
+                        <input class="login-fields-input" type="password" placeholder="Password">
+                    </div>
+                    <button class="login-btn">Continue</button>
+                    <p class="login-text-to-signup">Create an account?<span>Click here</span></p>
+                    <div class="login-agree">
+                        <input class="" type="checkbox" name='' id='' />
+                        <p>By continuing, i agree to the term of use & privacy policy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
