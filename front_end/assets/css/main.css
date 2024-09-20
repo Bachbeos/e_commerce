@@ -410,3 +410,31 @@
 .login-signup-agree p {
     margin: 0;
 }
+
+/* CSS banner man */
+.shop-category-container {
+
+}
+
+.shop-category-banner {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.shop-category-banner-img {
+    height: 270px;
+    /* width: 1316px; */
+    width: 85.5vw;
+}
+
+
+.swiper-wrap {
+    display: flex;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

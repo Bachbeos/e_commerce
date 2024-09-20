@@ -74,7 +74,62 @@
             <div class="popular mt-104">
                 <h1 class="heading-for-popular-collections">POPULAR IN WOMENS</h1>
                 <hr class="hr-for-popular-collections" />
-                <div class="popular-item">
+                <div class="swiper popular-swiper">
+                    <div class="swiper-wrap">
+                        <div class="swiper-slide">
+                            <div>
+                                <a style="text-decoration: none;" href="">
+                                    <img class="popular-item-img item-img-size" src="./assets/img/product_1.png" alt="">
+                                    <p class="popular-item-name item-name">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+                                </a>
+                                <span class="popular-item-price item-price">
+                                    <p class="popular-item-new-price item-new-price">$80</p>
+                                    <p class="popular-item-old-price item-old-price">$80</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a style="text-decoration: none;" href="">
+                                    <img class="popular-item-img item-img-size" src="./assets/img/product_2.png" alt="">
+                                    <p class="popular-item-name item-name">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+                                </a>
+                                <span class="popular-item-price item-price">
+                                    <p class="popular-item-new-price item-new-price">$80</p>
+                                    <p class="popular-item-old-price item-old-price">$80</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a style="text-decoration: none;" href="">
+                                    <img class="popular-item-img item-img-size" src="./assets/img/product_3.png" alt="">
+                                    <p class="popular-item-name item-name">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+                                </a>
+                                <span class="popular-item-price item-price">
+                                    <p class="popular-item-new-price item-new-price">$80</p>
+                                    <p class="popular-item-old-price item-old-price">$80</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a style="text-decoration: none;" href="">
+                                    <img class="popular-item-img item-img-size" src="./assets/img/product_4.png" alt="">
+                                    <p class="popular-item-name item-name">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+                                </a>
+                                <span class="popular-item-price item-price">
+                                    <p class="popular-item-new-price item-new-price">$80</p>
+                                    <p class="popular-item-old-price item-old-price">$80</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- <div class="popular-item">
                     <div>
                         <a style="text-decoration: none;" href="">
                         <img class="popular-item-img item-img-size" src="./assets/img/product_1.png" alt="">
@@ -115,7 +170,7 @@
                             <p class="popular-item-old-price item-old-price">$80</p>
                         </span>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- End popular -->
 
@@ -270,5 +325,32 @@
         </div>
         <!-- End footer -->
     </div>
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new swiper('.popular-swiper', {
+            slidersPerView: 4,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            breakpoints: {
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+                1280: { slidesPerView: 4, spaceBetween: 30 },
+            }
+        })
+    </script>
 </body>
 </html>
