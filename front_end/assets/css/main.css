@@ -146,6 +146,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 104px;
+    gap: 20px;
 }
 
 /* CSS offer */
@@ -394,7 +395,7 @@
     font-weight: 400;
 }
 
-.ogin-signup-text-to-switch span {
+.login-signup-text-to-switch span {
     margin-left: 10px;
     color: var(--primary-color);
     font-weight: 600;
@@ -427,14 +428,4 @@
     height: 270px;
     /* width: 1316px; */
     width: 85.5vw;
-}
-
-
-.swiper-wrap {
-    display: flex;
-}
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
