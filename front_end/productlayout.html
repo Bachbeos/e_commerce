@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link font jetbrains-mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!-- Link font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <title>Product Layout</title>
+</head>
+<body>
+    <div id="main-product-layout-page">
+        <div class="header">
+            <div class="header_navbar jetbrains-mono">
+                <div class="nav-logo">
+                    <a href="index.html"><img class="nav-logo-img logo-img" src="./assets/img/logo_big.png" alt="Logo"></a>
+                    <p class="nav-logo-name logo-name">shopper</p>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="">Shop</a></li>
+                    <li class="nav-menu-item"><a href="">Man</a></li>
+                    <li class="nav-menu-item"><a href="">Woman</a></li>
+                    <li class="nav-menu-item"><a href="">Kid</a></li>
+                </ul>
+
+                <div class="nav-login-cart">
+                    <button class="nav-login-cart-btn btn">Login</button>
+                    <img class="nav-login-cart-img" src="./assets/img/cart_icon.png" alt="cart icon">
+                    <div class="nav-login-cart-count">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-layout-container">
+            <div class="product-layout-breadcrum jetbrains-mono">
+                <div class="breadcrum">
+                    Shop <img src="./assets/img/breadcrum_arrow.png" alt="">
+                    Category <img src="./assets/img/breadcrum_arrow.png" alt="">
+                    Product Showing Layout (Location Path)
+                </div>
+            </div>
+            <div class="product-layout-productdisplay">
+                <div class="productdisplay-left">
+                    <div class="productdisplay-img-list">
+                        <img src="./assets/img/p1_product_i1.png" alt="">
+                        <img src="./assets/img/p1_product_i2.png" alt="">
+                        <img src="./assets/img/p1_product_i3.png" alt="">
+                        <img src="./assets/img/p1_product_i4.png" alt="">
+                    </div>
+                    <div class="productdisplay-img">
+                        <img src="./assets/img/p1_product.png" alt="" class="productdisplay-main-img">
+                    </div>
+                </div>
+                <div class="productdisplay-right inter">
+                    <h1>Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</h1>
+                    <div class="productdisplay-right-stars">
+                        <img src="./assets/img/star_icon.png" alt="">
+                        <img src="./assets/img/star_icon.png" alt="">
+                        <img src="./assets/img/star_icon.png" alt="">
+                        <img src="./assets/img/star_icon.png" alt="">
+                        <img src="./assets/img/star_dull_icon.png" alt="">
+                        <p>(122)</p>
+                    </div>
+                    <div class="productdisplay-right-prices">
+                        <div class="productdisplay-right-price-old">
+                            $120
+                        </div>
+                        <div class="productdisplay-right-price-new">
+                            $80
+                        </div>
+                    </div>
+                    <div class="productdisplay-right-description">
+                        Simple description of the product: about (color, mad by, bla bla).....
+                    </div>
+                    <div class="productdisplay-right-size">
+                        <h1>Select Size</h1>
+                        <div class="productdisplay-right-sizes">
+                            <div>S</div>
+                            <div>M</div>
+                            <div>L</div>
+                            <div>XL</div>
+                            <div>XXL</div>
+                        </div>
+                        <button>ADD TO CART</button>
+                        <p class="productdisplay-right-category"><span>Category : </span>Women, T-shirt, Crop top</p>
+                        <p class="productdisplay-right-category"><span>Tags : </span>Modern, Latest</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-layout-descriptionbox inter">
+                <div class="descriptionbox-navigator">
+                    <div class="descriptionbox-nav-box">
+                        Description
+                    </div>
+                    <div class="descriptionbox-nav-box fade">
+                        Reviews (122)
+                    </div>
+                </div>
+                <div class="descriptionbox-description">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea vel officiis, quisquam unde architecto aliquam</p>
+                    <p>Tempora illum aspernatur ex eaque deleniti, harum nostrum voluptates quam illo impedit debitis sint quibusdam pariatur vel!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer jetbrains-mono">
+            <div class="footer-logo">
+                <img class="footer-logo-img logo-img" src="./assets/img/logo_big.png" alt="">
+                <p class="footer-logo-name logo-name">shopper</p>
+            </div>
+    
+            <ul class="footer-links">
+                <li>Company</li>
+                <li>Products</li>
+                <li>Offices</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+    
+            <div class="footer-social-icon">
+                <div class="footer-icons-container">
+                    <img src="./assets/img/instagram_icon.png" alt="">
+                </div>
+                <div class="footer-icons-container">
+                    <img src="./assets/img/pintester_icon.png" alt="">
+                </div>
+                <div class="footer-icons-container">
+                    <img src="./assets/img/whatsapp_icon.png" alt="">
+                </div>
+            </div>
+    
+            <div class="footer-copyright">
+                <hr />
+                <p>Copyright ©2024 - All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
