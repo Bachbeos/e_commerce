@@ -25,12 +25,30 @@
   font-family: "Inter", sans-serif;
 }
 
+.bricolage-grotesque {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
 .btn {
     height: 55px;
     border-radius: 75px;
     cursor: pointer;
     font-size: 20px;
     outline: none;
+}
+
+.btn-for-buy-product {
+    padding: 16px 40px;
+    margin-top: 22px;
+    margin-bottom: 36px;
+    width: 140px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .logo-img {
