@@ -1,0 +1,30 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --btn-color: #D03636;
+    --price-old-color: #7F7F7F;
+    --primary-color: #F43E3A;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.bricolage-grotesque {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.background-for-active {
+  background: #D9D9D9;
+}
