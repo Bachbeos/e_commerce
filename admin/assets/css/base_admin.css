@@ -37,3 +37,17 @@
   cursor: pointer;
   font-weight: 500;
 }
+
+.button-flex {
+  width: 120px;
+}
+
+.list-format-main {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}

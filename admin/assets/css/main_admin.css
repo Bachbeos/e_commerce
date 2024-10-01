@@ -1,9 +1,15 @@
 /* CSS Navbar */
+.admin-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 60px;
+    padding: 18px 60px;
     box-shadow: 0 1px 3px -2px #000;
     background: #fff;
 }
@@ -18,8 +24,7 @@
 
 /* CSS admin container */
 .admin-container {
-    display: flex;
-    height: calc(100vh - 60px);
+    
 }
 
 /* CSS admin sidebar */
@@ -27,10 +32,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 25px;
+    padding-bottom: 25px;
     gap: 10px;
     width: 100%;
     max-width: 290px;
-    height: calc(100vh + 104px);
     background: var(--white-color);
     margin-top: 2px;
     box-shadow: 1px 0 3px -2px #000;
@@ -72,17 +77,31 @@
 }
 
 /* CSS admin content */
+.admin-container {
+    display: flex;
+}
+
 .admin-content {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.admin-product {
+.admin-product,
+.admin-category,
+.admin-color,
+.admin-size,
+.admin-role,
+.admin-user {
     
 }
 
-.admin-product-nav {
+.admin-product-nav,
+.admin-category-nav,
+.admin-color-nav,
+.admin-size-nav,
+.admin-role-nav,
+.admin-user-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +112,17 @@
 }
 
 .admin-product-addproduct,
-.admin-product-productlist {
+.admin-product-productlist,
+.admin-category-add,
+.admin-category-list,
+.admin-color-add,
+.admin-color-list,
+.admin-size-add,
+.admin-size-list,
+.admin-role-add,
+.admin-role-list,
+.admin-user-add,
+.admin-user-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,16 +131,33 @@
     color: var(--black-color);
     width: 200px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-.admin-product-content {
+.admin-product-content,
+.admin-category-content,
+.admin-color-content,
+.admin-size-content,
+.admin-role-content,
+.admin-user-content {
     display: flex;
     justify-content: center;
 }
 
 /* CSS add product */
 
-.add-product {
+.add-product,
+.update-product,
+.add-category,
+.update-category,
+.add-color,
+.update-color,
+.add-size,
+.update-size,
+.add-role,
+.update-role,
+.add-user,
+.update-user {
     box-sizing: border-box;
     width: 100%;
     max-width: 800px;
@@ -121,17 +167,36 @@
     background: #fff;
 }
 
-.addproduct-itemfield {
+
+.addproduct-itemfield,
+.updateproduct-itemfield,
+.category-itemfield,
+.color-itemfield,
+.size-itemfield,
+.role-itemfield,
+.user-itemfield {
     width: 100%;
     color: #333;
     font-size: 20px;
 }
 
-.addproduct-itemfield p {
+.addproduct-itemfield p,
+.updateproduct-itemfield p, 
+.category-itemfield p,
+.color-itemfield p,
+.size-itemfield p,
+.role-itemfield p,
+.user-itemfield p {
     margin-bottom: 10px;
 }
 
-.addproduct-itemfield input {
+.addproduct-itemfield input,
+.updateproduct-itemfield input,
+.category-itemfield input,
+.color-itemfield input,
+.size-itemfield input,
+.role-itemfield input,
+.user-itemfield input {
     box-sizing: border-box;
     width: 100%;
     height: 50px;
@@ -143,12 +208,14 @@
     font-size: 18px;
 }
 
-.addproduct-price {
+.addproduct-price,
+.updateproduct-price {
     display: flex;
     gap: 40px;
 }
 
-.addproduct-upload-custom {
+.addproduct-upload-custom,
+.updateproduct-upload-custom {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -176,7 +243,8 @@
     border-radius: 0 4px 4px 0;
 }
 
-.add-product-selector {
+.add-product-selector,
+.update-product-selector {
     padding: 10px;
     width: 110px;
     height: 50px;
@@ -186,7 +254,13 @@
     border-radius: 4px;
 }
 
-.addproduct-btn {
+.addproduct-btn,
+.updateproduct-btn,
+.category-btn,
+.color-btn,
+.size-btn,
+.role-btn,
+.user-btn {
     margin-top: 20px;
     width: 230px;
     height: 52px;
@@ -200,22 +274,25 @@
 }
 
 /* CSS product list */
-.product-list {
+.product-list,
+.category-list,
+.color-list,
+.size-list,
+.role-list,
+.user-list {
     margin: 40px 40px;
 }
 
 .product-list-format-main {
-    display: grid;
     grid-template-columns: 0.5fr 1.25fr 1.75fr 0.75fr 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    color: var(--black-color);
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
 }
 
-.product-list-format {
+.product-list-format,
+.category-list-format,
+.color-list-format,
+.size-list-format,
+.role-list-format,
+.user-list-format {
     font-size: 20px;
 }
 
@@ -224,7 +301,8 @@
     margin:  0 auto;
 }
 
-.product-list-button {
+.product-list-button,
+.user-list-button {
     display: grid;
     gap: 14px;
 }
@@ -242,4 +320,36 @@
 .import-button {
     color: var(--white-color);
     background-color: #C77C25;
+}
+
+/* CSS category list */
+.category-list-format-main,
+.color-list-format-main,
+.size-list-format-main,
+.role-list-format-main {
+    grid-template-columns: 1fr 1fr 4fr;
+}
+
+.user-list-format-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1.2fr;
+}
+
+.category-list-button,
+.color-list-button,
+.size-list-button,
+.role-list-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CSS update category */
+.update-category h1,
+.update-color h1,
+.update-size h1,
+.update-role h1,
+.update-user h1 {
+    text-align: center;
+    font-weight: 500;
 }
