@@ -28,3 +28,12 @@
 .background-for-active {
   background: #D9D9D9;
 }
+
+.button {
+  padding: 14px 10px;
+  font-size: 19px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
